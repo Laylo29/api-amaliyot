@@ -38,7 +38,7 @@ function getProducts(list: { products: ProductType[] }) {
     list.products.map((item: ProductType) => {
         let elItem: HTMLLIElement = document.createElement("li")
         elItem.innerHTML = `
-        <div class="w-[350px] text-white bg-pink-500 shadow-lg shadow-pink-200 p-2 rounded-lg overflow-hidden ">
+        <div class="w-[350px] text-white bg-pink-200 shadow-lg shadow-pink-200 p-2 rounded-lg overflow-hidden ">
             <img class="mb-2" src="${item.images[0]}" alt="Product img" width="350" height="200" />
             <div class="px-2 pb-2">
                 <h2 class="font-bold mb-[5px] text-[22px] ">${item.title}</h2>
